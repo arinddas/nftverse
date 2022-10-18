@@ -1,0 +1,200 @@
+.header {
+    font-size: 17px;
+    font-weight: bold;
+    font-family: monospace;
+    margin-bottom: 20px;
+}
+
+.create-button {
+    background-image: linear-gradient(to right, rgb(255, 0, 184) 0%, rgb(100, 161, 255) 50%, rgb(0, 102, 255) 100%);
+    color: white;
+    border-radius: 24px;
+}
+
+.cross {
+    outline: none;
+    box-shadow: none;
+    background: transparent;
+    height: 30px;
+    width: 30px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    opacity: 0.2;
+    transition: all 0.2s ease 0s;
+    cursor: pointer;
+}
+.header {
+    font-size: 17px;
+    font-weight: bold;
+    font-family: monospace;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-bottom: 15px;
+}
+
+.create-button {
+    background-image: linear-gradient(to right, rgb(255, 0, 184) 0%, rgb(100, 161, 255) 50%, rgb(0, 102, 255) 100%);
+    color: white;
+    border-radius: 24px;
+}
+
+.cross {
+    outline: none;
+    box-shadow: none;
+    background: transparent;
+    height: 80px;
+    width: 30px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    opacity: 0.2;
+    transition: all 0.2s ease 0s;
+    cursor: pointer;
+}
+
+.Myprofile {
+    font-weight: bold;
+    font-size: 17px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    min-width: 100%;
+    text-align: left;
+}
+.Signout {
+    font-weight: bold;
+    font-size: 17px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    min-width: 100%;
+    text-align: left;
+}
+
+.address {
+    margin-left: 20px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.box {
+    margin-bottom: 4px;
+    vertical-align: inherit;
+    max-width: 100%;
+    min-height: 0px;
+    min-width: 0px;
+    flex-shrink: 0;
+    flex-direction: column;
+    flex-basis: auto;
+    display: flex;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    padding: 8px 12px;
+    text-align: left;
+}
+
+.container {
+    vertical-align: inherit;
+    max-width: 100%;
+    min-height: 0px;
+    min-width: 0px;
+    flex-shrink: 0;
+    flex-direction: column;
+    flex-basis: auto;
+    display: flex;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    min-width: 300px;
+    padding: 16px 12px;
+    border: 1px solid rgba(4, 4, 5, 0.1);
+    border-radius: 12px;
+}
+
+.eth-box {
+    flex-direction: row;
+    -webkit-box-align: center;
+    align-items: center;
+    flex: 1 1 auto;
+    -webkit-box-flex: 1;
+    vertical-align: inherit;
+    max-width: 100%;
+    min-height: 0px;
+    min-width: 0px;
+    display: flex;
+}
+
+.eth-icon {
+    width: 44px;
+    vertical-align: inherit;
+    max-width: 100%;
+    min-height: 0px;
+    min-width: 0px;
+    flex-shrink: 0;
+    flex-direction: column;
+    flex-basis: auto;
+    display: flex;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    margin-right:20px;
+}
+
+.currecncy-balance {
+    height: 100%;
+    flex-shrink: 1;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    word-break: break-all;
+    text-align: left;
+    -webkit-box-flex: 1;
+    flex: 1 0 auto;
+    -webkit-box-pack: center;
+    justify-content: center;
+    vertical-align: inherit;
+    max-width: 100%;
+    min-height: 0px;
+    min-width: 0px;
+    flex-direction: column;
+    display: flex;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+}
+
+.balance {
+    vertical-align: inherit;
+    max-width: 100%;
+    min-height: 0px;
+    min-width: 0px;
+    flex-shrink: 0;
+    flex-direction: column;
+    flex-basis: auto;
+    display: flex;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    margin-bottom: 2px;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: 14px;
+    color: rgb(110, 110, 110);
+    vertical-align: inherit;
+}
+
+.eth-value {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 15px;
+    vertical-align: inherit;
+}

@@ -1,0 +1,45 @@
+<div class="right-aligned">
+    <button *ngIf="!userAddress" mat-stroked-button class="sign-button" (click)="walletConnect()">Sign
+        in</button>
+    <button *ngIf="userAddress" mat-stroked-button class="connected-button"
+        (click)="openUserAccounts(userAddress)">Connected</button>
+</div>
+
+<div>
+
+    <div>
+        <div class="w-full h-44 rounded-md bg-center bg-cover flex flex-col justify-center px-4 image-create-nft">
+            <h2 style="margin-left: 120px;"class="font-bold text-3xl max-w-sm banner">Buy/Sell Gold Tokens</h2>
+            <button style="margin-left: 120px;" mat-stroked-button class="base-margin-right create-button" (click)="createNFTs()">Mint
+                Tokens</button>
+        </div>
+    </div>
+
+    <div class="base-margin-top owned-padd">
+        <h3 *ngIf="userNFTs.length">Owned NFTs</h3>
+    </div>
+
+    <div class="row" *ngIf="!loading">
+        <div class="column" *ngFor="let item of userNFTs">
+            <mat-card class="nft-card">
+                <img mat-card-image [src]="item.data.image" [alt]="item.data.image" class="images-nft">
+                <mat-card-actions>
+                    <button mat-button [innerText]="item.data.name" class="button-names"></button>
+                </mat-card-actions>
+            </mat-card>
+            <div class="half-margin-top center">
+                <!-- <button mat-stroked-button class="open-button" (click)="viewOnOpenSea(item.tokenId)">view on OpenSea</button> -->
+                <button mat-stroked-button class="open-button" (click)="send(item)">Send</button>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row" *ngIf="loading">
+        <div class="column" *ngFor="let item of getDataFromTokenUris">
+            <div class="ghost-loading">
+
+            </div>
+        </div>
+    </div>
+</div>

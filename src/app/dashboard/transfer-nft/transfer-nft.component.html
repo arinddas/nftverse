@@ -1,0 +1,28 @@
+<div>
+    <h3 class="base-margin-bottom center">Token Transfer</h3>
+
+    <div class="base-margin-bottom">
+        <img [src]="image" [alt]="image" class="images-nft">
+
+    </div>
+    <form [formGroup]="FormData" (ngSubmit)="transferTokens()" autocomplete="off">
+        <div class="base-margin-bottom">
+            <mat-form-field class="base-margin-top" appearance="standard">
+                <mat-label>Receiver Address</mat-label>
+                <input formControlName="receiveraddress" matInput
+                    placeholder="0xdc532f53575cfd7012c8cf733f730c1a50eee8f2">
+            </mat-form-field>
+        </div>
+
+        <button mat-stroked-button class="sign-button" [disabled]="!FormData.valid" >Send</button>
+    </form>
+
+    <div *ngIf="transactionHash" style="text-align: center;" class="dbl-margin-top">
+        <a class="transaction" role="button" target="_blank" (click)="goToDashbooard()">View the Transaction on Block Explorer</a>
+    </div>
+
+</div>
+
+<div *ngIf="loader" class="transparent">
+    <mat-spinner class="spinner"></mat-spinner>
+</div>

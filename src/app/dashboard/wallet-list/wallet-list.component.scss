@@ -1,0 +1,60 @@
+.connect-wallet {
+    font-size: 29px;
+    font-weight: 400;
+    color: rgb(255, 96, 56);
+    text-align: center;
+    margin: 0px 0px 8px;
+}
+
+.wallet-description {
+    font-size: 17px;
+    line-height: 25px;
+    color: rgb(12, 12, 12);
+    opacity: 0.5;
+    text-align: center;
+}
+
+.columns-button {
+    display: flex;
+    flex-direction: column;
+}
+
+.column-1 {
+    outline: none;
+    box-shadow: none;
+    background: transparent;
+    height: 64px;
+    border: 1px solid rgba(12, 12, 12, 0.2);
+    margin: 8px 0px;
+    border-radius: 16px;
+    color: rgb(12, 12, 12);
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding: 0px 24px;
+    box-sizing: border-box;
+    transition: all 0.2s ease 0s;
+}
+
+.gatsby-image-wrapper-constrained {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.gatsby-image-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.metamask {
+    max-width: 100%;
+    display: block;
+    position: static;
+}
+
+.meta-area {
+    max-width: 32px;
+    display: block;
+}

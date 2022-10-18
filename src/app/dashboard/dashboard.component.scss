@@ -1,0 +1,179 @@
+.connected-button {
+    background-image: linear-gradient(to right, rgb(255, 0, 184) 0%, rgb(100, 161, 255) 50%, rgb(0, 102, 255) 100%);
+    color: white;
+    border-radius: 24px;
+    width: 13%;
+    height: 50px;
+    font-size: 18px;
+    float: right;
+}
+
+.create-button {
+    background-image: linear-gradient(to right, rgb(255, 0, 184) 0%, rgb(100, 161, 255) 50%, rgb(0, 102, 255) 100%);
+    color: white;
+    border-radius: 24px;
+    width: 12%;
+    height: 50px;
+    font-size: 18px;
+}
+
+.sign-button {
+    width: 13%;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 24px;
+    float: right;
+}
+
+.owned-padd {
+    padding: 10px;
+}
+
+.banner {
+    color: white;
+}
+
+.right-aligned {
+    width: 100%;
+    margin-bottom: 30px;
+    float: right;
+}
+
+::ng-deep .custom-modalbox {
+    mat-dialog-container {
+        background: rgb(252, 252, 253);
+        width: 500px;
+        padding: 50px 24px 32px;
+        border-radius: 24px;
+        box-sizing: border-box;
+        position: relative;
+    }
+}
+
+::ng-deep .custom-transferbox {
+    mat-dialog-container {
+        background: rgb(252, 252, 253);
+        width: 500px;
+        border-radius: 24px;
+        box-sizing: border-box;
+        position: relative;
+    }
+}
+
+.row {
+    display: inline-flex;
+}
+
+.column {
+    flex: 33.33%;
+    padding: 15px;
+    margin-right: 20px;
+}
+
+.images-nft {
+    max-height: 250px;
+    min-height: 250px;
+}
+
+.nft-card {
+    width: 250px;
+}
+
+.px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.bg-center {
+    background-position: center;
+}
+
+.bg-cover {
+    background-size: cover;
+}
+
+.rounded-md {
+    border-radius: 0.375rem;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.w-full {
+    width: 98%;
+}
+
+.image-create-nft {
+    background-image: url("../../assets/gold.jpg");
+}
+
+.p-3 {
+    padding: 0.75 rem;
+}
+
+.h-44 {
+    height: 15rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.py-2 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.to-violet-600 {
+    --tw-gradient-to: #7c3aed;
+}
+
+.from-fuchsia-600 {
+    --tw-gradient-from: #c026d3;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(192 38 211 / 0));
+}
+
+.bg-gradient-to-tr {
+    background-image: linear-gradient(to top right, var(--tw-gradient-stops));
+}
+
+.rounded-md {
+    border-radius: 0.375rem;
+}
+
+.w-44 {
+    width: 15rem;
+}
+
+.mt-3 {
+    margin-top: 0.75rem;
+}
+
+.button-names {
+    font-size: 20px;
+    white-space: pre-wrap;
+}
+
+.open-button {
+    height: 40px;
+    font-size: 18px;
+    border-radius: 24px;
+    margin-top: 15px;
+}
+
+.ghost-loading {
+    width: 315px;
+    height: 250px;
+    cursor: progress;
+    background: linear-gradient(0.25turn, transparent, #fff, transparent), linear-gradient(#eee, #eee),
+        radial-gradient(38px circle at 19px 19px, #eee 50%, transparent 51%), linear-gradient(#eee, #eee);
+    background-repeat: repeat;
+    background-size: 315px 250px, 315px 180px, 100px 100px, 225px 30px;
+    background-position: -315px 0, 0 0, 0px 190px, 50px 195px;
+    animation: loading 1.5s infinite;
+}
